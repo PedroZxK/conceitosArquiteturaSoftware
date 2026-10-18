@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI Architectures - Arquitetura de Software</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <nav class="navbarTopo">
+        <div class="container">
+            <a href="index.html">
+                <img src="img/senaiLogo.png" alt="Logo SENAI">
+            </a>
+        </div>
+    </nav>
+
+    <main id="conteudoPrincipal">
+        <header>
+            <div class="container">
+                <h2>3. GUI Architectures</h2>
+                <p>Estratégia de Arquitetura por Martin Fowler</p>
+            </div>
+        </header>
+
+        <section class="container artigoConteudo">
+            <h3>1. O que é o artigo?</h3>
+            <p>Fowler faz um tour pela evolução das arquiteturas de interface de usuário (GUI). Ele mostra como saímos
+                de telas simples de "Formulários" para os famosos padrões MVC (Model-View-Controller) e suas variações.
+                A regra de ouro que ele destaca aqui é a "Apresentação Separada": manter a lógica pesada de negócio (o
+                domínio) totalmente isolada do que o usuário vê na tela, usando eventos para sincronizar as duas coisas.
+            </p>
+
+            <h3>2. Pontos Fortes e Fracos</h3>
+            <p><strong>Vantagens:</strong></p>
+            <ul>
+                <li>Separar o visual da lógica permite usar o mesmo back-end para um site web, um app mobile e até um
+                    terminal de linha de comando.</li>
+                <li>Testes automatizados ficam muito mais fáceis. Você pode testar toda a lógica da tela sem precisar
+                    abrir a interface gráfica.</li>
+            </ul>
+            <p><strong>Desvantagens:</strong></p>
+            <ul>
+                <li>Sincronizar tudo por eventos (Observer) pode deixar o fluxo do sistema meio "escondido",
+                    dificultando achar bugs.</li>
+                <li>Exige escrever bem mais código e criar mais classes do que usar ferramentas rápidas de arrastar e
+                    soltar (drag-and-drop).</li>
+            </ul>
+
+            <h3>3. Na Gestão do Projeto</h3>
+            <ul>
+                <li><strong>Prazo:</strong> Demora mais para dar o pontapé inicial porque a arquitetura é chata de
+                    configurar, mas depois compensa com a velocidade pra adicionar novas funções.</li>
+                <li><strong>Custo:</strong> Pede desenvolvedores com mais conhecimento em padrões de projeto, o que pode
+                    encarecer a equipe no começo.</li>
+                <li><strong>Equipe:</strong> Perfeito para trabalhar em paralelo. O pessoal de front-end cuida da tela
+                    enquanto o back-end foca na lógica, sem um travar o outro.</li>
+                <li><strong>Riscos:</strong> Diminui bastante a chance de quebrar o sistema ao mudar a cor de um botão,
+                    já que a regra de negócios fica blindada e coberta por testes.</li>
+            </ul>
+
+            <h3>4. Post Original</h3>
+            <p>Confira o artigo completo publicado por Martin Fowler:</p>
+            <a href="https://martinfowler.com/eaaDev/uiArchs.html" target="_blank" class="btnLink">Ler "GUI
+                Architectures" Original</a>
+
+            <div class="navegacaoArtigos">
+                <a href="legacyDisplacement.html" class="btnLink btnVoltar">← Artigo Anterior</a>
+                <a href="index.html" class="btnLink btnProximo">Voltar ao Início →</a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Todos os direitos reservados a Pedro Santos e Misael Morgado</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monolith First - Arquitetura de Software</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <nav class="navbarTopo">
+        <div class="container">
+            <a href="index.html">
+                <img src="img/senaiLogo.png" alt="Logo SENAI">
+            </a>
+        </div>
+    </nav>
+
+    <main id="conteudoPrincipal">
+        <header>
+            <div class="container">
+                <h2>1. Monolith First</h2>
+                <p>Estratégia de Arquitetura por Martin Fowler</p>
+            </div>
+        </header>
+
+        <section class="container artigoConteudo">
+            <h3>1. A Ideia Principal</h3>
+            <p>A ideia por trás do "Monolith First" é bem direta: começar um projeto novo logo de cara com
+                microsserviços é pedir pra ter dor de cabeça. Martin Fowler destaca que quase todo sistema de
+                microsserviços que deu certo hoje começou como um monolito que, depois de crescer bastante, precisou ser
+                dividido. Ou seja: construa um sistema unificado bem feito primeiro, e só quebre em partes menores
+                quando o projeto realmente exigir essa escala.</p>
+
+            <h3>2. Pontos Fortes e Fracos</h3>
+            <p><strong>Vantagens:</strong></p>
+            <ul>
+                <li>Evita o custo e a lentidão de gerenciar várias redes de serviços logo no início do projeto.</li>
+                <li>Fica muito mais fácil entender as regras de negócio antes de tentar separar tudo fisicamente.</li>
+                <li>Refatorar código dentro de um monolito dá bem menos trabalho do que entre serviços separados.</li>
+            </ul>
+            <p><strong>Desvantagens:</strong></p>
+            <ul>
+                <li>Exige bastante disciplina da equipe para manter o código interno organizado.</li>
+                <li>Se o time se descuidar, o sistema vira uma "bola de lama" super acoplada, o que torna quase
+                    impossível separar os serviços no futuro.</li>
+            </ul>
+
+            <h3>3. Como isso afeta o gerenciamento?</h3>
+            <ul>
+                <li><strong>Prazo:</strong> Agiliza o início do desenvolvimento. A equipe foca em entregar logo para
+                    testar a ideia, sem perder tempo configurando infraestrutura complexa.</li>
+                <li><strong>Custo:</strong> Bem mais barato no começo, já que manter um servidor único gasta menos do
+                    que dezenas de microsserviços.</li>
+                <li><strong>Equipe:</strong> Ideal para times menores. O lado ruim é que os desenvolvedores demoram mais
+                    para ganhar experiência com arquitetura distribuída.</li>
+                <li><strong>Riscos:</strong> O maior risco não é técnico, é o débito técnico. Se a modularidade for
+                    ignorada, o projeto morre antes mesmo da transição.</li>
+            </ul>
+
+            <h3>4. Post Original</h3>
+            <p>Confira o artigo completo publicado por Martin Fowler:</p>
+            <a href="https://martinfowler.com/bliki/MonolithFirst.html" target="_blank" class="btnLink">Ler "Monolith
+                First" Original</a>
+
+            <div class="navegacaoArtigos">
+                <a href="index.html" class="btnLink btnVoltar">← Voltar ao Início</a>
+                <a href="legacyDisplacement.html" class="btnLink btnProximo">Próximo Artigo →</a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Todos os direitos reservados a Pedro Santos e Misael Morgado</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
