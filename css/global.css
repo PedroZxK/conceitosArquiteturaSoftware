@@ -1,0 +1,47 @@
+:root {
+    --gray: #808080;
+    --black: #000;
+    --white: #fff;
+    --backcolor: rgb(25, 24, 29);
+    --cardcolor: rgb(7, 23, 39);
+    --cardcoloranim: rgb(11, 39, 66);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    background-color: var(--backcolor);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+h1 {
+    font-size: 45px;
+    background-color: transparent;
+}
+
+h2 {
+    font-size: 30px;
+    background-color: transparent;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+    margin-top: 50px;
+    padding: 10px 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
