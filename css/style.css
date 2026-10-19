@@ -100,3 +100,42 @@
     text-decoration: underline;
     font-size: 20px;
 }
+
+.artigoConteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: min(1000px, 90vw);
+    padding: 30px 20px;
+}
+
+.btnLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 10px 16px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    background-color: var(--cardcolor);
+    color: var(--white);
+    transition: 0.3s ease;
+}
+
+.btnLink:hover {
+    background-color: var(--cardcoloranim);
+    transform: translateY(-1px);
+}
+
+.navegacaoArtigos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.btnVoltar,
+.btnProximo {
+    width: auto;
+}

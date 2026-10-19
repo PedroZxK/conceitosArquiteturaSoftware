@@ -14,66 +14,60 @@
 
     <nav class="navbarTopo">
         <div class="container">
-            <a href="index.html">
-                <img src="img/senaiLogo.png" alt="Logo SENAI">
+            <a href="index.html" class="aLogo">
+                <img src="img/senaiLogo.png" alt="Logo SENAI" id="logoSenai"/>
             </a>
+
+            <div class="lang-switcher" aria-label="Seletor de idioma">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+            </div>
         </div>
     </nav>
 
     <main id="conteudoPrincipal">
         <header>
             <div class="container">
-                <h2>2. Patterns of Legacy Displacement</h2>
-                <p>Estratégia de Arquitetura por Martin Fowler e equipe Thoughtworks</p>
+                <h2 data-i18n="article2Title">2. Patterns of Legacy Displacement</h2>
+                <p data-i18n="article2Subtitle">Estratégia de Arquitetura por Martin Fowler e equipe Thoughtworks</p>
             </div>
         </header>
 
         <section class="container artigoConteudo">
-            <h3>1. Do que se trata?</h3>
-            <p>Como substituir um sistema antigo sem explodir tudo no processo? Esse artigo discute como quebrar aquele
-                ciclo comum de migrações que falham ou ficam pela metade. Em vez de tentar trocar toda a tecnologia de
-                uma só vez (o famoso método "big bang", que é super arriscado), a equipe da Thoughtworks sugere um
-                processo contínuo: focar no que o negócio precisa, dividir o problema pelas "costuras" da arquitetura e
-                ir entregando as melhorias aos poucos.</p>
+            <h3 data-i18n="article2Section1">1. Do que se trata?</h3>
+            <p data-i18n="article2Text1">Como substituir um sistema antigo sem explodir tudo no processo? Esse artigo discute como quebrar aquele ciclo comum de migrações que falham ou ficam pela metade. Em vez de tentar trocar toda a tecnologia de uma só vez (o famoso método "big bang", que é super arriscado), a equipe da Thoughtworks sugere um processo contínuo: focar no que o negócio precisa, dividir o problema pelas "costuras" da arquitetura e ir entregando as melhorias aos poucos.</p>
 
-            <h3>2. Pontos Fortes e Fracos</h3>
-            <p><strong>Vantagens:</strong></p>
+            <h3 data-i18n="article2Section2">2. Pontos Fortes e Fracos</h3>
+            <p><strong data-i18n="article2Advantages">Vantagens:</strong></p>
             <ul>
-                <li>Evita o desastre do lançamento "big bang", deixando o sistema velho e o novo rodarem juntos com
-                    segurança.</li>
-                <li>Os usuários não precisam esperar anos pra ver melhorias; o valor é entregue em paralelo com a
-                    migração.</li>
-                <li>Garante que o software continue acompanhando o mercado a longo prazo.</li>
+                <li data-i18n="article2Adv1">Evita o desastre do lançamento "big bang", deixando o sistema velho e o novo rodarem juntos com segurança.</li>
+                <li data-i18n="article2Adv2">Os usuários não precisam esperar anos pra ver melhorias; o valor é entregue em paralelo com a migração.</li>
+                <li data-i18n="article2Adv3">Garante que o software continue acompanhando o mercado a longo prazo.</li>
             </ul>
-            <p><strong>Desvantagens:</strong></p>
+            <p><strong data-i18n="article2Disadvantages">Desvantagens:</strong></p>
             <ul>
-                <li>Mudar a cultura da empresa e das lideranças costuma ser bem mais difícil que a mudança do código.
-                </li>
-                <li>Achar onde "cortar" um sistema legado super amarrado é um baita desafio inicial.</li>
-                <li>Exige criar códigos provisórios (tipo interceptadores) que vão dar trabalho agora e serão apagados
-                    depois.</li>
+                <li data-i18n="article2Dis1">Mudar a cultura da empresa e das lideranças costuma ser bem mais difícil que a mudança do código.</li>
+                <li data-i18n="article2Dis2">Achar onde "cortar" um sistema legado super amarrado é um baita desafio inicial.</li>
+                <li data-i18n="article2Dis3">Exige criar códigos provisórios (tipo interceptadores) que vão dar trabalho agora e serão apagados depois.</li>
             </ul>
 
-            <h3>3. Impactos no Projeto</h3>
+            <h3 data-i18n="article2Section3">3. Impactos no Projeto</h3>
             <ul>
-                <li><strong>Prazo:</strong> Foge dos atrasos gigantescos dos projetos em cascata. Entregas menores
-                    mostram progresso rápido.</li>
-                <li><strong>Custo:</strong> Exige um orçamento planejado para manter a infraestrutura de transição, mas
-                    evita o prejuízo de abandonar um projeto inteiro lá na frente.</li>
-                <li><strong>Equipe:</strong> O time passa a ser organizado com foco no fluxo do produto, e não apenas
-                    por tecnologia (aplicando a Lei de Conway).</li>
-                <li><strong>Riscos:</strong> Cai drasticamente. Como as entregas são pequenas, testar em produção e
-                    reverter falhas fica muito mais fácil.</li>
+                <li><strong data-i18n="article2Prazo">Prazo:</strong> <span data-i18n="article2PrazoText">Foge dos atrasos gigantescos dos projetos em cascata. Entregas menores mostram progresso rápido.</span></li>
+                <li><strong data-i18n="article2Custo">Custo:</strong> <span data-i18n="article2CustoText">Exige um orçamento planejado para manter a infraestrutura de transição, mas evita o prejuízo de abandonar um projeto inteiro lá na frente.</span></li>
+                <li><strong data-i18n="article2Equipe">Equipe:</strong> <span data-i18n="article2EquipeText">O time passa a ser organizado com foco no fluxo do produto, e não apenas por tecnologia (aplicando a Lei de Conway).</span></li>
+                <li><strong data-i18n="article2Riscos">Riscos:</strong> <span data-i18n="article2RiscosText">Cai drasticamente. Como as entregas são pequenas, testar em produção e reverter falhas fica muito mais fácil.</span></li>
             </ul>
 
-            <h3>4. Post Original</h3>
-            <p>Confira o artigo completo publicado no portal de Martin Fowler:</p>
-            <a href="https://martinfowler.com/articles/patterns-legacy-displacement/" target="_blank"
-                class="btnLink">Ler "Legacy Displacement" Original</a>
+            <h3 data-i18n="article2Section4">4. Post Original</h3>
+            <p data-i18n="article2Original">Confira o artigo completo publicado no portal de Martin Fowler:</p>
+            <a href="https://martinfowler.com/articles/patterns-legacy-displacement/" target="_blank" class="btnLink" data-i18n="article2Link">Ler "Legacy Displacement" Original</a>
 
             <div class="navegacaoArtigos">
-                <a href="monolithFirst.html" class="btnLink btnVoltar">← Artigo Anterior</a>
-                <a href="guiArchitectures.html" class="btnLink btnProximo">Próximo Artigo →</a>
+                <a href="monolithFirst.html" class="btnLink btnVoltar" data-i18n="previous">← Artigo Anterior</a>
+                <a href="guiArchitectures.html" class="btnLink btnProximo" data-i18n="next">Próximo Artigo →</a>
             </div>
 
         </section>
@@ -81,7 +75,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2026 Todos os direitos reservados a Pedro Santos e Misael Morgado</p>
+            <p class="footerText" data-i18n="footer">© 2026 Todos os direitos reservados a Pedro Santos e Misael Morgado</p>
         </div>
     </footer>
 

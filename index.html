@@ -17,33 +17,40 @@
             <a href="" class="aLogo">
                 <img src="img/senaiLogo.png" alt="Logo SENAI" id="logoSenai"/>
             </a>
+
+            <div class="lang-switcher" aria-label="Seletor de idioma">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+            </div>
         </div>
     </nav>
 
     <main id="conteudoPrincipal">
-        <h1>Conceitos de Arquitetura de Software</h1>
+        <h1 data-i18n="homeTitle">Conceitos de Arquitetura de Software</h1>
         <section>
             <div class="container">
-                <h2>Equipe:</h2>
+                <h2 data-i18n="team">Equipe:</h2>
                 <div class="equipe">
                     <div class="membroEquipe">
                         <img src="img/fotoMisael.png" alt="Foto do Misael Morgado" class="perfilImg">
-                        <p class="nomeMembro">Misael Bonifácio Morgado</p>
+                        <p class="nomeMembro" data-i18n="member1">Misael Bonifácio Morgado</p>
                     </div>
                     <div class="membroEquipe">
                         <img src="img/fotoPedro.png" alt="Foto do Pedro Santos" class="perfilImg">
-                        <p class="nomeMembro">Pedro Gabriel Moreira dos Santos</p>
+                        <p class="nomeMembro" data-i18n="member2">Pedro Gabriel Moreira dos Santos</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="container menuArtigos">
-            <p class="textArtigos">Selecione um dos tópicos abaixo para explorar os resumos, vantagens e impactos na gestão de projetos:</p>
+            <p class="textArtigos" data-i18n="homeIntro">Selecione um dos tópicos abaixo para explorar os resumos, vantagens e impactos na gestão de projetos:</p>
             <nav>
                 <ul>
-                    <li><a class="linkRef" href="monolithFirst.html">Monolith First</a></li>
-                    <li><a class="linkRef" href="legacyDisplacement.html">Patterns of Legacy Displacement</a></li>
-                    <li><a class="linkRef" href="guiArchitectures.html">GUI Architectures</a></li>
+                    <li><a class="linkRef" href="monolithFirst.html" data-i18n="monolith">Monolith First</a></li>
+                    <li><a class="linkRef" href="legacyDisplacement.html" data-i18n="legacy">Patterns of Legacy Displacement</a></li>
+                    <li><a class="linkRef" href="guiArchitectures.html" data-i18n="gui">GUI Architectures</a></li>
                 </ul>
             </nav>
         </section>
@@ -51,7 +58,7 @@
 
     <footer>
         <div class="container">
-            <p class="footerText">© 2026 Todos os direitos reservados a Pedro Santos e Misael Morgado</p>
+            <p class="footerText" data-i18n="footer">© 2026 Todos os direitos reservados a Pedro Santos e Misael Morgado</p>
         </div>
     </footer>
 

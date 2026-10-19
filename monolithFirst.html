@@ -14,62 +14,59 @@
 
     <nav class="navbarTopo">
         <div class="container">
-            <a href="index.html">
-                <img src="img/senaiLogo.png" alt="Logo SENAI">
+            <a href="index.html" class="aLogo">
+                <img src="img/senaiLogo.png" alt="Logo SENAI" id="logoSenai"/>
             </a>
+
+            <div class="lang-switcher" aria-label="Seletor de idioma">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+            </div>
         </div>
     </nav>
 
     <main id="conteudoPrincipal">
         <header>
             <div class="container">
-                <h2>1. Monolith First</h2>
-                <p>Estratégia de Arquitetura por Martin Fowler</p>
+                <h2 data-i18n="article1Title">1. Monolith First</h2>
+                <p data-i18n="article1Subtitle">Estratégia de Arquitetura por Martin Fowler</p>
             </div>
         </header>
 
         <section class="container artigoConteudo">
-            <h3>1. A Ideia Principal</h3>
-            <p>A ideia por trás do "Monolith First" é bem direta: começar um projeto novo logo de cara com
-                microsserviços é pedir pra ter dor de cabeça. Martin Fowler destaca que quase todo sistema de
-                microsserviços que deu certo hoje começou como um monolito que, depois de crescer bastante, precisou ser
-                dividido. Ou seja: construa um sistema unificado bem feito primeiro, e só quebre em partes menores
-                quando o projeto realmente exigir essa escala.</p>
+            <h3 data-i18n="article1Section1">1. A Ideia Principal</h3>
+            <p data-i18n="article1Text1">A ideia por trás do "Monolith First" é bem direta: começar um projeto novo logo de cara com microsserviços é pedir pra ter dor de cabeça. Martin Fowler destaca que quase todo sistema de microsserviços que deu certo hoje começou como um monolito que, depois de crescer bastante, precisou ser dividido. Ou seja: construa um sistema unificado bem feito primeiro, e só quebre em partes menores quando o projeto realmente exigir essa escala.</p>
 
-            <h3>2. Pontos Fortes e Fracos</h3>
-            <p><strong>Vantagens:</strong></p>
+            <h3 data-i18n="article1Section2">2. Pontos Fortes e Fracos</h3>
+            <p><strong data-i18n="article1Advantages">Vantagens:</strong></p>
             <ul>
-                <li>Evita o custo e a lentidão de gerenciar várias redes de serviços logo no início do projeto.</li>
-                <li>Fica muito mais fácil entender as regras de negócio antes de tentar separar tudo fisicamente.</li>
-                <li>Refatorar código dentro de um monolito dá bem menos trabalho do que entre serviços separados.</li>
+                <li data-i18n="article1Adv1">Evita o custo e a lentidão de gerenciar várias redes de serviços logo no início do projeto.</li>
+                <li data-i18n="article1Adv2">Fica muito mais fácil entender as regras de negócio antes de tentar separar tudo fisicamente.</li>
+                <li data-i18n="article1Adv3">Refatorar código dentro de um monolito dá bem menos trabalho do que entre serviços separados.</li>
             </ul>
-            <p><strong>Desvantagens:</strong></p>
+            <p><strong data-i18n="article1Disadvantages">Desvantagens:</strong></p>
             <ul>
-                <li>Exige bastante disciplina da equipe para manter o código interno organizado.</li>
-                <li>Se o time se descuidar, o sistema vira uma "bola de lama" super acoplada, o que torna quase
-                    impossível separar os serviços no futuro.</li>
+                <li data-i18n="article1Dis1">Exige bastante disciplina da equipe para manter o código interno organizado.</li>
+                <li data-i18n="article1Dis2">Se o time se descuidar, o sistema vira uma "bola de lama" super acoplada, o que torna quase impossível separar os serviços no futuro.</li>
             </ul>
 
-            <h3>3. Como isso afeta o gerenciamento?</h3>
+            <h3 data-i18n="article1Section3">3. Como isso afeta o gerenciamento?</h3>
             <ul>
-                <li><strong>Prazo:</strong> Agiliza o início do desenvolvimento. A equipe foca em entregar logo para
-                    testar a ideia, sem perder tempo configurando infraestrutura complexa.</li>
-                <li><strong>Custo:</strong> Bem mais barato no começo, já que manter um servidor único gasta menos do
-                    que dezenas de microsserviços.</li>
-                <li><strong>Equipe:</strong> Ideal para times menores. O lado ruim é que os desenvolvedores demoram mais
-                    para ganhar experiência com arquitetura distribuída.</li>
-                <li><strong>Riscos:</strong> O maior risco não é técnico, é o débito técnico. Se a modularidade for
-                    ignorada, o projeto morre antes mesmo da transição.</li>
+                <li><strong data-i18n="article1Prazo">Prazo:</strong> <span data-i18n="article1PrazoText">Agiliza o início do desenvolvimento. A equipe foca em entregar logo para testar a ideia, sem perder tempo configurando infraestrutura complexa.</span></li>
+                <li><strong data-i18n="article1Custo">Custo:</strong> <span data-i18n="article1CustoText">Bem mais barato no começo, já que manter um servidor único gasta menos do que dezenas de microsserviços.</span></li>
+                <li><strong data-i18n="article1Equipe">Equipe:</strong> <span data-i18n="article1EquipeText">Ideal para times menores. O lado ruim é que os desenvolvedores demoram mais para ganhar experiência com arquitetura distribuída.</span></li>
+                <li><strong data-i18n="article1Riscos">Riscos:</strong> <span data-i18n="article1RiscosText">O maior risco não é técnico, é o débito técnico. Se a modularidade for ignorada, o projeto morre antes mesmo da transição.</span></li>
             </ul>
 
-            <h3>4. Post Original</h3>
-            <p>Confira o artigo completo publicado por Martin Fowler:</p>
-            <a href="https://martinfowler.com/bliki/MonolithFirst.html" target="_blank" class="btnLink">Ler "Monolith
-                First" Original</a>
+            <h3 data-i18n="article1Section4">4. Post Original</h3>
+            <p data-i18n="article1Original">Confira o artigo completo publicado por Martin Fowler:</p>
+            <a href="https://martinfowler.com/bliki/MonolithFirst.html" target="_blank" class="btnLink" data-i18n="article1Link">Ler "Monolith First" Original</a>
 
             <div class="navegacaoArtigos">
-                <a href="index.html" class="btnLink btnVoltar">← Voltar ao Início</a>
-                <a href="legacyDisplacement.html" class="btnLink btnProximo">Próximo Artigo →</a>
+                <a href="index.html" class="btnLink btnVoltar" data-i18n="backHome">← Voltar ao Início</a>
+                <a href="legacyDisplacement.html" class="btnLink btnProximo" data-i18n="next">Próximo Artigo →</a>
             </div>
 
         </section>
@@ -77,7 +74,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2026 Todos os direitos reservados a Pedro Santos e Misael Morgado</p>
+            <p class="footerText" data-i18n="footer">© 2026 Todos os direitos reservados a Pedro Santos e Misael Morgado</p>
         </div>
     </footer>
 
